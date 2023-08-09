@@ -6,7 +6,7 @@
 
 :root {
   --ff-all: "Nunito", sans-serif;
-  --bg-primary: #edf2fc;
+  --bg-primary: 	#e7eff6;
   --color-primary: #2d2d2d;
   --color-terciary: #fb2e00;
 
@@ -17,11 +17,8 @@
 }
 
 .dark-theme {
-  --bg-secondary: #0e1111;
-  --color-secondary: #ffff;
-
-  --bg-terciary: #fff;
-  --color-four: #0e1111;
+  --bg-secondary: #021622;
+  --color-secondary: 	#e7eff6;
 }
 .container {
   width: clamp(33rem, 80%, 150rem);
@@ -50,8 +47,8 @@
   text-decoration: none;
   font-size: var(--fs-body);
 
-  color: #fff;
-  background-color: #fb2e00;
+  color: #e7eff6;
+  background-color: var(--color-terciary);
 
   border-radius: 50px;
 
@@ -65,7 +62,7 @@
 }
 
 .container h1 a:hover {
-  background-color: #fff;
+  background-color:	#e7eff6;
   color: #fb2e00;
 
   box-shadow: 2px 4px 15px 1px #8f8f8f;
