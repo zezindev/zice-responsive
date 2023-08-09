@@ -6,7 +6,7 @@
 
 :root {
   --ff-all: "Nunito", sans-serif;
-  --bg-primary: 	#e7eff6;
+  --bg-primary: #e7eff6;
   --color-primary: #2d2d2d;
   --color-terciary: #fb2e00;
 
@@ -18,7 +18,7 @@
 
 .dark-theme {
   --bg-secondary: #021622;
-  --color-secondary: 	#e7eff6;
+  --color-secondary: #e7eff6;
 }
 .container {
   width: clamp(33rem, 80%, 150rem);
@@ -62,7 +62,7 @@
 }
 
 .container h1 a:hover {
-  background-color:	#e7eff6;
+  background-color: #e7eff6;
   color: #fb2e00;
 
   box-shadow: 2px 4px 15px 1px #8f8f8f;
@@ -95,10 +95,6 @@
   color: var(--color-terciary);
 }
 
-.info img {
-  height: 38rem;
-}
-
 .info h2 {
   font-size: var(--fs-header-sm);
 
@@ -109,16 +105,28 @@
   font-weight: 500;
 }
 
-.info img {
+.div-img #main-img {
+  height: 38rem;
   position: relative;
   transition: transform 0.3s ease-out;
   transform: translateY(0);
 
+  margin: auto;
   cursor: pointer;
 }
 
-.info img:hover {
-  transform: translateY(-10px);
+.div-img #main-img:hover{
+  transform: translate(-20px, -22px);
+}
+
+.div-img #back-img{
+  height: 38rem;
+  position: absolute;
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+
+  margin: auto;
+  cursor: pointer;
 }
 
 .div-one {
@@ -176,7 +184,11 @@
     font-weight: 500;
   }
 
-  .info img {
+  .div-img #main-img{
+    height: 30rem;
+  }
+
+  .div-img #back-img{
     height: 30rem;
   }
 
