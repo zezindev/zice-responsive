@@ -6,7 +6,7 @@
 
 :root {
   --ff-all: "Nunito", sans-serif;
-  --bg-primary: 	#e7eff6;
+  --bg-primary: #e7eff6;
   --color-primary: #2d2d2d;
   --color-terciary: #fb2e00;
 
@@ -18,7 +18,7 @@
 
 .dark-theme {
   --bg-secondary: #021622;
-  --color-secondary: 	#e7eff6;
+  --color-secondary: #e7eff6;
 }
 
 ::-webkit-scrollbar {
@@ -175,7 +175,7 @@ header img {
 }
 
 .fa-sun {
-  color: 	#e7eff6;
+  color: #e7eff6;
   padding: 1px;
 }
 

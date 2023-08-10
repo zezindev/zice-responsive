@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&family=Nunito:wght@500&display=swap"
       rel="stylesheet"
@@ -120,7 +121,7 @@
                 knowledge.
               </p>
             </div>
-            <div class="card">
+            <div class="card" id="card3">
               <img src="./imgs/woman-gorro.jpg" alt="" />
               <h2>Global Reach</h2>
               <p>
@@ -134,7 +135,7 @@
         </div>
       </section>
 
-      <section class="info">
+      <section class="info" id="info-three">
         <div class="div-one">
           <h2>Why <span>Should</span> You Choose ZICE?</h2>
           <p>
@@ -145,9 +146,20 @@
             reach new heights of digital success!
           </p>
         </div>
-        <div class="div-img">
-          <img src="./imgs/3.png" alt="" id="back-img" />
-          <img src="./imgs/222.png" alt="" id="main-img" />
+        <div class="outer-div">
+          <div class="inner-div">
+            <img class="image" src="/imgs/8.png" alt="Imagem 1" id="img1" />
+            <img class="image" src="/imgs/7.png" alt="Imagem 2" id="img2" />
+            <img class="image" src="/imgs/6.png" alt="Imagem 3" id="img3" />
+          </div>
+          <div class="arrow left-arrow">&#8249;</div>
+          <div class="arrow right-arrow">&#8250;</div>
+
+          <div class="pagination">
+            <div class="dot active-dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
         </div>
       </section>
 
@@ -223,4 +235,5 @@
   </body>
   <script src="./js/script.js"></script>
   <script src="./js/menu.js"></script>
+  <script src="./js/carousel.js"></script>
 </html>
