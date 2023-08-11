@@ -101,7 +101,7 @@ span {
   margin-bottom: 2rem;
 }
 
-.info p {
+.info h3 {
   font-weight: 500;
 }
 
@@ -158,6 +158,10 @@ span {
   margin-bottom: 2rem;
 }
 
+.info-two h3 {
+  font-weight: 500;
+}
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -199,7 +203,63 @@ span {
   padding: 0 15px 15px;
 }
 
-#info-three {
+.info-three {
+  width: clamp(33rem, 80%, 100rem);
+
+  margin: 6rem auto 0;
+  text-align: center;
+
+  color: var(--color-secondary);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.info-three h1 {
+  font-size: var(--fs-header-sm);
+
+  margin-bottom: 2rem 0;
+}
+
+.info-three h2 {
+  margin: 3rem 0;
+}
+
+.info-three h3 {
+  font-weight: 500;
+}
+
+.div-if3 {
+  display: flex;
+  justify-content: flex-start;
+
+  margin-bottom: 5rem;
+}
+
+.div-if3 h2 {
+  margin-bottom: 1rem;
+}
+
+.img-div img {
+  width: 20rem;
+}
+
+.content-div {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin: 0 15px;
+}
+
+.content-div h2,
+h3 {
+  text-align: start;
+}
+
+#info-four {
   margin: 4rem auto;
 }
 
@@ -287,6 +347,23 @@ span {
   #img3 {
     padding-right: 13%;
   }
+
+  .info-two {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #card3 {
+    margin-bottom: 0;
+  }
+
+  .info-three {
+    margin-top: 0;
+  }
+
+  .info-three h2 {
+    margin: 3rem 0;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -299,7 +376,15 @@ span {
   }
 }
 
-@media (max-width: 912px){
+@media (max-width: 912px) {
+  .div-img #main-img {
+    height: 32rem;
+  }
+
+  .div-img #back-img {
+    height: 32rem;
+  }
+
   .outer-div {
     width: 45%;
     overflow: hidden;
@@ -336,6 +421,14 @@ span {
   #img1 {
     padding-right: 15%;
     padding-left: 0;
+  }
+
+  .div-if3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 5rem;
   }
 }
 
@@ -452,6 +545,44 @@ span {
   }
 }
 
+@media (max-width: 712px) {
+  .outer-div {
+    width: 70%;
+    overflow: hidden;
+
+    margin: 0 auto;
+  }
+
+  .image {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .inner-div {
+    display: flex;
+    gap: 10%;
+  }
+}
+
+@media (max-width: 510px) {
+  .outer-div {
+    width: 80%;
+    overflow: hidden;
+
+    margin: 0 auto;
+  }
+
+  .image {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .inner-div {
+    display: flex;
+    gap: 10%;
+  }
+}
+
 @media (max-width: 420px) {
   .container h1 {
     font-size: var(--fs-header-sm);
@@ -467,7 +598,8 @@ span {
   .outer-div {
     width: 100%;
     overflow: hidden;
-    position: relative;
+
+    margin: 0 auto;
   }
 
   .image {
@@ -477,18 +609,6 @@ span {
 
   .inner-div {
     display: flex;
-    gap: 9%;
-  }
-
-  #img1 {
-    padding-left: 3%;
-  }
-
-  #img2 {
-    padding-right: 3%;
-  }
-
-  #img3 {
-    padding-left: 8%;
+    gap: 10%;
   }
 }
