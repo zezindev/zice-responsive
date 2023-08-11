@@ -28,6 +28,6 @@ rightArrow.addEventListener("click", () => {
 
 setInterval(() => {
   navigate(1)
-}, 4000)
+}, 5000)
 
 showImage(currentIndex)
