@@ -259,6 +259,86 @@ span {
 
 /* Mobile */
 
+@media (max-width: 1230px) {
+  .outer-div {
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .inner-div {
+    display: flex;
+    gap: 15%;
+  }
+
+  #img1 {
+    padding-left: 15%;
+  }
+
+  #img2 {
+    padding-right: 10%;
+  }
+
+  #img3 {
+    padding-right: 13%;
+  }
+}
+
+@media (max-width: 1020px) {
+  #img1 {
+    padding-left: 5%;
+  }
+
+  #img2 {
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 912px){
+  .outer-div {
+    width: 45%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .inner-div {
+    display: flex;
+    gap: 16%;
+  }
+}
+
+@media (max-width: 830px) {
+  .outer-div {
+    width: 45%;
+    overflow: hidden;
+  }
+
+  .image {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .inner-div {
+    display: flex;
+    gap: 10%;
+  }
+
+  #img1 {
+    padding-right: 15%;
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 820px) {
   .container {
     display: flex;
@@ -336,19 +416,39 @@ span {
   }
 
   .outer-div {
-    width: 100%;
+    width: 45%;
     overflow: hidden;
-    position: relative;
+
+    margin: 0 auto;
   }
 
   .image {
-    height: 33rem;
+    height: 30rem;
     object-fit: cover;
   }
 
   .inner-div {
     display: flex;
-    gap: 15%;
+    gap: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .outer-div {
+    width: 50%;
+    overflow: hidden;
+
+    margin: 0 auto;
+  }
+
+  .image {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .inner-div {
+    display: flex;
+    gap: 10%;
   }
 }
 
@@ -362,5 +462,33 @@ span {
   }
   .info p {
     font-size: var(--fs-body);
+  }
+
+  .outer-div {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .image {
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .inner-div {
+    display: flex;
+    gap: 9%;
+  }
+
+  #img1 {
+    padding-left: 3%;
+  }
+
+  #img2 {
+    padding-right: 3%;
+  }
+
+  #img3 {
+    padding-left: 8%;
   }
 }
