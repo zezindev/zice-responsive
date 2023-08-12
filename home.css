@@ -158,6 +158,10 @@ span {
   margin-bottom: 2rem;
 }
 
+.info-two h3 {
+  font-weight: 500;
+}
+
 .card-container {
   display: flex;
   justify-content: center;
@@ -199,7 +203,63 @@ span {
   padding: 0 15px 15px;
 }
 
-#info-three {
+.info-three {
+  width: clamp(33rem, 80%, 100rem);
+
+  margin: 6rem auto 0;
+  text-align: center;
+
+  color: var(--color-secondary);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.info-three h1 {
+  font-size: var(--fs-header-sm);
+
+  margin-bottom: 2rem 0;
+}
+
+.info-three h2 {
+  margin: 3rem 0;
+}
+
+.info-three h3 {
+  font-weight: 500;
+}
+
+.div-if3 {
+  display: flex;
+  justify-content: flex-start;
+
+  margin-bottom: 5rem;
+}
+
+.div-if3 h2 {
+  margin-bottom: 1rem;
+}
+
+.img-div img {
+  width: 20rem;
+}
+
+.content-div {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  margin: 0 15px;
+}
+
+.content-div h2,
+h3 {
+  text-align: start;
+}
+
+#info-four {
   margin: 4rem auto;
 }
 
@@ -257,6 +317,63 @@ span {
   background-color: #fb2e00;
 }
 
+.section-end {
+  height: 48rem;
+  width: 100%;
+
+  margin: 10rem 0 0;
+
+  background-image: url(/imgs/woman-pc-smile-sweter.png);
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.info-end {
+  position: relative;
+  right: 10%;
+}
+
+.info-end h1 {
+  font-size: var(--fs-header-sm);
+
+  color: #e7eff6;
+  margin: auto;
+}
+
+.info-end a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: var(--fs-body);
+
+  color: #e7eff6;
+  background-color: var(--color-terciary);
+
+  border-radius: 50px;
+
+  width: 18rem;
+  padding: 15px 0;
+  margin: 7% auto 0;
+
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.info-end a:hover {
+  background-color: #e7eff6;
+  color: #fb2e00;
+
+  box-shadow: 2px 4px 15px 1px #8f8f8f;
+  transform: translateY(-10px);
+}
+
 /* Mobile */
 
 @media (max-width: 1230px) {
@@ -287,6 +404,23 @@ span {
   #img3 {
     padding-right: 13%;
   }
+
+  .info-two {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #card3 {
+    margin-bottom: 0;
+  }
+
+  .info-three {
+    margin-top: 0;
+  }
+
+  .info-three h2 {
+    margin: 3rem 0;
+  }
 }
 
 @media (max-width: 1020px) {
@@ -299,7 +433,15 @@ span {
   }
 }
 
-@media (max-width: 912px){
+@media (max-width: 912px) {
+  .div-img #main-img {
+    height: 32rem;
+  }
+
+  .div-img #back-img {
+    height: 32rem;
+  }
+
   .outer-div {
     width: 45%;
     overflow: hidden;
@@ -336,6 +478,14 @@ span {
   #img1 {
     padding-right: 15%;
     padding-left: 0;
+  }
+
+  .div-if3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-bottom: 5rem;
   }
 }
 
@@ -430,6 +580,13 @@ span {
   .inner-div {
     display: flex;
     gap: 10%;
+  }
+
+  .info-end {
+    position: relative;
+    right: 0;
+    margin: auto;
+    padding: 0;
   }
 }
 
