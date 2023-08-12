@@ -191,7 +191,7 @@ footer {
   gap: 15%;
 
   padding: 12rem 0 4rem;
-  border-top: solid 2px var(--color-terciary);
+  border-top: solid 4px var(--color-terciary);
 }
 
 .container-social {

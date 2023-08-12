@@ -317,6 +317,63 @@ h3 {
   background-color: #fb2e00;
 }
 
+.section-end {
+  height: 48rem;
+  width: 100%;
+
+  margin: 10rem 0 0;
+
+  background-image: url(/imgs/woman-pc-smile-sweter.png);
+  background-size: cover;
+  background-position: top;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.info-end {
+  position: relative;
+  right: 10%;
+}
+
+.info-end h1 {
+  font-size: var(--fs-header-sm);
+
+  color: #e7eff6;
+  margin: auto;
+}
+
+.info-end a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: var(--fs-body);
+
+  color: #e7eff6;
+  background-color: var(--color-terciary);
+
+  border-radius: 50px;
+
+  width: 18rem;
+  padding: 15px 0;
+  margin: 7% auto 0;
+
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.info-end a:hover {
+  background-color: #e7eff6;
+  color: #fb2e00;
+
+  box-shadow: 2px 4px 15px 1px #8f8f8f;
+  transform: translateY(-10px);
+}
+
 /* Mobile */
 
 @media (max-width: 1230px) {
@@ -523,6 +580,13 @@ h3 {
   .inner-div {
     display: flex;
     gap: 10%;
+  }
+
+  .info-end {
+    position: relative;
+    right: 0;
+    margin: auto;
+    padding: 0;
   }
 }
 
