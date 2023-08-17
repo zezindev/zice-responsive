@@ -52,7 +52,7 @@
   color: #e7eff6;
   background-color: var(--color-terciary);
 
-  border-radius: 50px;
+  border-radius: 7px;
 
   width: 17rem;
   padding: 10px 0;
@@ -67,7 +67,7 @@
   background-color: #e7eff6;
   color: #fb2e00;
 
-  box-shadow: 2px 4px 15px 1px #8f8f8f;
+  box-shadow: 1px 4px 10px 1px #041a29;
   transform: translateY(-10px);
 }
 
@@ -107,28 +107,22 @@ span {
   font-weight: 500;
 }
 
-.div-img #main-img {
-  height: 38rem;
+.div-img img {
+  width: 80%;
   position: relative;
   transition: transform 0.3s ease-out;
   transform: translateY(0);
 
   margin: auto;
   cursor: pointer;
+
+  border-radius: 10px;
 }
 
-.div-img #main-img:hover {
-  transform: translate(-20px, -22px);
-}
+.div-img img:hover {
+  transform: translate(-10px, -12px);
 
-.div-img #back-img {
-  height: 38rem;
-  position: absolute;
-  transition: transform 0.3s ease-out;
-  transform: translateY(0);
-
-  margin: auto;
-  cursor: pointer;
+  box-shadow: 2px 4px 15px 1px #0b324c;
 }
 
 .div-one {
@@ -177,7 +171,7 @@ span {
 .card {
   flex: 1;
   color: var(--color-secondary);
-  border-radius: 40px;
+  border-radius: 10px;
 
   transition: transform 0.3s ease-out;
   transform: translateY(0);
@@ -185,7 +179,7 @@ span {
 
 .card img {
   width: 100%;
-  border-radius: 40px 40px 0 0;
+  border-radius: 10px 10px 0 0;
   border-bottom: 4px solid #fb2e00;
 }
 
@@ -193,7 +187,7 @@ span {
   transform: translate(-5px, -10px);
   cursor: pointer;
 
-  box-shadow: 10px 10px 1px #fb2e00;
+  box-shadow: 4px 4px 10px #0b324c;
 }
 
 .card h2 {
@@ -342,7 +336,7 @@ h3 {
 
   margin: 10rem 0 0;
 
-  background-image: url(zice-responsive/imgs/man-pc-smile.png);
+  background-image: url(/imgs/man-pc-smile.png);
   /* zice-responsive/imgs/man-pc-smile.png */
   background-size: cover;
   background-position: top;
@@ -376,7 +370,7 @@ h3 {
   color: #e7eff6;
   background-color: var(--color-terciary);
 
-  border-radius: 50px;
+  border-radius: 7px;
 
   width: 18rem;
   padding: 15px 0;
@@ -390,7 +384,49 @@ h3 {
   background-color: #e7eff6;
   color: #fb2e00;
 
-  box-shadow: 2px 4px 15px 1px #8f8f8f;
+  box-shadow: 2px 4px 15px 1px #0b324c;
+  transform: translateY(-10px);
+}
+
+.section-tech-text {
+  margin: 8rem auto 0;
+  text-align: center;
+
+  color: var(--color-secondary);
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.section-tech-text h1 {
+  font-size: var(--fs-header-sm);
+
+  margin-bottom: 2rem;
+}
+
+.section-tech-text p {
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.section-tech {
+  padding: 20px;
+}
+
+.tech-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.tech-item {
+  transition: transform 0.3s ease-out;
+  transform: translateY(0);
+}
+
+.tech-item:hover {
+  cursor: pointer;
   transform: translateY(-10px);
 }
 
@@ -478,6 +514,10 @@ h3 {
 }
 
 @media (max-width: 912px) {
+  .container img {
+    height: 37rem;
+  }
+
   .div-img #main-img {
     height: 32rem;
   }
@@ -507,16 +547,17 @@ h3 {
   .container {
     width: clamp(33rem, 80%, 100rem);
     height: 80rem;
-    margin: 0 auto 15rem;
+    margin: auto;
 
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
   }
 
   .container h1 {
     font-size: var(--fs-header);
+    margin-top: 5rem;
   }
 
   .container p {
@@ -525,6 +566,7 @@ h3 {
 
   .container img {
     margin-top: 5rem;
+
     height: 40rem;
   }
 
@@ -704,19 +746,23 @@ h3 {
     display: flex;
     gap: 10%;
   }
+
+  .tech-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 420px) {
-  .container {
-    padding-top: 0;
-  }
-
   .container h1 {
     font-size: var(--fs-header-sm);
   }
 
   .container p {
     font-size: var(--fs-body);
+  }
+
+  .container img {
+    margin-top: 5rem;
   }
 
   .info p {
