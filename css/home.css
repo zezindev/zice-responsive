@@ -79,6 +79,17 @@
   color: #fb2e00;
 }
 
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .info {
   width: clamp(33rem, 80%, 100rem);
 
@@ -335,9 +346,9 @@ h3 {
   width: 100%;
 
   margin: 10rem 0 0;
-  
-  background-image: url(https://zezindev.github.io/zice-responsive/imgs/man-pc-smile.png);
-  /* zice-responsive/imgs/man-pc-smile.png */
+
+  background-image: url(/imgs/man-pc-smile.png);
+  /* background-image: url(https://zezindev.github.io/zice-responsive/imgs/man-pc-smile.png); */
   background-size: cover;
   background-position: top;
 
@@ -354,6 +365,11 @@ h3 {
 .info-end h1 {
   font-size: var(--fs-header-sm);
 
+  color: #e7eff6;
+  margin: auto;
+}
+
+.info-end h2 {
   color: #e7eff6;
   margin: auto;
 }
@@ -714,6 +730,18 @@ h3 {
     margin: 0 auto;
   }
 
+  #img1 {
+    padding-left: 8%;
+  }
+
+  #img2 {
+    padding-right: 2%;
+  }
+
+  #img3 {
+    padding-left: 8%;
+  }
+
   .image {
     height: 30rem;
     object-fit: cover;
@@ -722,6 +750,12 @@ h3 {
   .inner-div {
     display: flex;
     gap: 10%;
+  }
+}
+
+@media (max-width: 540px) {
+  #img1 {
+    padding-left: 0;
   }
 }
 
@@ -735,6 +769,18 @@ h3 {
     overflow: hidden;
 
     margin: 0 auto;
+  }
+
+  #img1 {
+    padding-left: 0;
+  }
+
+  #img2 {
+    padding-right: 0;
+  }
+
+  #img3 {
+    padding-left: 0;
   }
 
   .image {
@@ -774,6 +820,18 @@ h3 {
     overflow: hidden;
 
     margin: 0 auto;
+  }
+
+  #img1 {
+    padding-left: 2%;
+  }
+
+  #img2 {
+    padding-right: 2%;
+  }
+
+  #img3 {
+    padding-left: 8%;
   }
 
   .image {

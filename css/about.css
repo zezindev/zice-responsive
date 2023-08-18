@@ -54,3 +54,14 @@ header {
   width: clamp(33rem, 80%, 150rem);
   padding: 3rem 0;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s, transform 1s;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
