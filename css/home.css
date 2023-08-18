@@ -20,6 +20,7 @@
   --bg-secondary: #021622;
   --color-secondary: #e7eff6;
 }
+
 .container {
   width: clamp(33rem, 80%, 130rem);
   height: 80rem;
@@ -81,7 +82,7 @@
 
 .hidden {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(30px);
   transition: opacity 1s, transform 1s;
 }
 
